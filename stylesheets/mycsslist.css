@@ -1,11 +1,32 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
-body{
-	background-color: aquamarine;
+
+body {
+	background-color:gainsboro;
+	font-family: "微软雅黑";
 }
-#mybilibili{
-	width: 30%;
-	margin: 0 auto;
+
+h1{
+	border: 1px solid #63A35C;
+	border-radius: 8px;
+	text-align: center;
+	color: darkslategray;
+}
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+}
+
+.video iframe,
+.video object,
+.video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
