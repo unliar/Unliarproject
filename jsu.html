@@ -32,12 +32,12 @@
 		</h4>-->
 		<form name="blur_test">
 			<h4>平均成绩计算</h4>
-			<h5>成绩不能为空白，如无任何成绩，请填0</h5>
+			<h5>成绩不能为空白，如果成绩显示为及格，请填60</h5>
 			
-				第一学期英语成绩： <input type="number" id="a" value="" size="5" onblur="Ave()"/><br> 
-				第二学期英语成绩： <input type="number" id="b" value="" size="5" onblur="Ave()"/> <br> 
-				第三学期英语成绩： <input type="number" id="c" value="" size="5" onblur="Ave()"/> <br>				
-				第四学期英语成绩： <input type="number" id="d" value="" size="5" onblur="Ave()"/><br />
+				第一学期英语成绩： <input type="number" id="a" value="60" size="5" onblur="Ave()"/><br> 
+				第二学期英语成绩： <input type="number" id="b" value="60" size="5" onblur="Ave()"/> <br> 
+				第三学期英语成绩： <input type="number" id="c" value="60" size="5" onblur="Ave()"/> <br>				
+				第四学期英语成绩： <input type="number" id="d" value="60" size="5" onblur="Ave()"/><br />
 				<span>平均成绩：<p id="test"></p></span>
 			       四级等级历史最高成绩：<input type="number" id="f" value="" size="5" /><br>
 			   <input type="button" id="btn" value="确认成绩，开始查询" onclick="check()"/><br />
