@@ -47,7 +47,9 @@
 				第四学期英语成绩： <input type="number" id="d" value="60" size="5" onblur="Ave()"/><br />
 				<span>平均成绩：<p id="test">60</p></span>
 			       四级等级历史最高成绩：<input type="number" id="f" value="" size="5" /><br><br />
-			   <input type="button" id="btn" value="确认成绩，开始查询" onclick="check()"/><br /><br />
+			   课程成绩(专升本必填)：<input type="number" name="fz" id="fz" value="60" /><br>
+			   <input type="button" id="btn" value="我是普本，开始查询" onclick="check()"/>
+			   <input type="button" id="btn2" value="我是专升本，开始查询" onclick="checkTwo()"/></br>/<br>
 			   <span>检测结果：<p id="result"></p></span>
 			
 				<hr/>
@@ -56,7 +58,8 @@
 			当然确实有不给通过的 我不是在说笑<br />
 			<span>毕业证暂缓发放	四级0，折算34.13	，学位证暂缓发放	英语折算未达60分、毕业论文、重修<br /></span>
 			红字数据来自2011级<br />
-			公式为：折算成绩=四级成绩/710*50+英语平均成绩*0.5：；
+			普本公式为：折算成绩=四级成绩/710*50+英语平均成绩*0.5.<br>
+			专升本公式为：四级成绩/（320/0.6）*0.5+专升本英语课程成绩*0.5.
 			</h4>	
 		</form>
 	
@@ -87,7 +90,16 @@
 		}
 			
 			
-			
+		function checkTwo(){
+				var f=document.getElementById("f").value;
+				var fz=document.getElementById("fz").value;
+				var zResults=f/(320/0.6)*100*0.5+fz*0.5;
+				if (f>=320||zResults>=60) {
+					document.getElementById("result").innerText="恭喜你，你达到了专升本获取学位证所要求的英语水平要求，你的折算成绩是:" +zResults+",四级成绩是："+f;
+				}else{
+					document.getElementById("result").innerText="很遗憾 你的成绩未达标，请查看输入是否无误! 四级最高成绩："+f+",专升本课程成绩："+fz; 
+				}
+			}	
 			
 		
 		
