@@ -38,7 +38,7 @@
 	<body>
 	
 		<form name="blur_test">
-			<h4>平均成绩计算</h4>
+			<h4>普本英语成绩折算</h4>
 			<h5>成绩不能为空白，如果成绩显示为及格，请填60</h5>
 			
 				第一学期英语成绩： <input type="number" id="a" value="60" size="5" onblur="Ave()"/><br> 
@@ -50,16 +50,16 @@
 			   <input type="button" id="btn" value="确认成绩，开始查询" onclick="check()"/><br /><br />
 			   <span>检测结果：<p id="result"></p></span>
 			
-				
-		</form>
-		<hr/>
+				<hr/>
 		<h4>实际上折算成绩达到59.5以上会被放水通过。<br />
 			<span>毕业证发放	 四级290	折算成绩59.55，学位证发放<br /></span>
 			当然确实有不给通过的 我不是在说笑<br />
 			<span>毕业证暂缓发放	四级0，折算34.13	，学位证暂缓发放	英语折算未达60分、毕业论文、重修<br /></span>
 			红字数据来自2011级<br />
 			公式为：折算成绩=四级成绩/710*50+英语平均成绩*0.5：；
-			</h4>
+			</h4>	
+		</form>
+	
 	</body>
 	<script type="text/javascript">
 
