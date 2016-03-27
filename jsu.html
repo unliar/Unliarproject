@@ -84,7 +84,7 @@
 			var f=document.getElementById("f").value;
 			var results=parseFloat(document.getElementById("test").innerText);
 			var endResult=f/ 710 * 100 * 0.5 + results* 0.5;
-			if (endResult>= 60) {
+			if (endResult>= 60||f>=425) {
 		document.getElementById("result").innerText="恭喜你，你达到了获取学位证所要求的英语水平要求，你的折算成绩是" + endResult;
 			} else {
 			document.getElementById("result").innerText="很遗憾 你的成绩未达标，请查看输入是否无误! " + "四级成绩：" + f + "，平时平均成绩：" + results + "，折算成绩：" + endResult;
